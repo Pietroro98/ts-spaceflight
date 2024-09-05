@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Card } from "react-bootstrap";
+
 interface Article {
   id: number;
   title: string;
@@ -41,7 +42,7 @@ export const ArticleList = () => {
     <Row className="justify-content-center">
       {articles.map((a) => (
         <Col key={a.id} xs={12} md={6} lg={4}>
-          <Card className="d-flex flex-column mb-4 h-100">
+          <Card className="d-flex flex-column g-5 h-100">
             <Card.Img variant="top" src={a.image_url} alt={a.title} className="card-img-top" style={{ height: '200px', objectFit: 'cover' }} />
             <Card.Body className="d-flex flex-column flex-grow-1">
               <Card.Title className="mb-2">{a.title}</Card.Title>

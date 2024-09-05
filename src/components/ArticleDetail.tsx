@@ -2,6 +2,7 @@ import  { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Spinner from 'react-bootstrap/Spinner';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+
 interface Article {
     id: number;
     title: string;
