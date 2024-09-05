@@ -1,8 +1,18 @@
+import { ListGroup } from "react-bootstrap";
+
+
+
 const ArticleList = () => {
   return (
-    <div>
-      <h1>Article List</h1>
-    </div>
+    <>
+      <ListGroup>
+        <ListGroup.Item>
+          <h1> Titolo della lista </h1>
+
+          <p> summary della lista</p>
+        </ListGroup.Item>
+      </ListGroup>
+    </>
   );
 };
 export default ArticleList;
